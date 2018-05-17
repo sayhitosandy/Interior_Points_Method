@@ -1,7 +1,27 @@
 # Interior Points Method
 Implementation of Interior Points Method in MATLAB.
 
-References:
+Further, we solved the following Linear Problem:
+```
+min   1'u + 1'v
+st. 
+      a'xi + b >=  1 - ui      i=1..N
+      a'yj + b <= -1 + vj      j=1..M
+      u >= 0
+      v >= 0
+
+```
+We were provided with:
+1. `DB_Vecs.npy` (Sequence vectors for training)
+2. `DB_Labels.npy` (corresponding labels)
+3. `Q_Vecs.npy` (Test sequences)
+
+Converted these into Matrix file - [data.mat](https://github.com/sayhitosandy/Interior_Points_Method/blob/master/Input/data.mat). 
+
+We were to submit the results (Labels for `Q_vecs`) as list/numpy array. Here, the output is in Matrix file - [uk.mat](https://github.com/sayhitosandy/Interior_Points_Method/tree/master/Code/uk.mat).
+
+
+**References**
 1. Video Resources:
 	* https://www.youtube.com/watch?v=oMRVDILkpUI - Stephen Boyd, Lecture 18, Convex Opt (discusses Barrier methods).
 	* https://www.youtube.com/watch?v=StlHUwd_AgM - Stephen Boyd, Lecture 18, Convex Opt (discusses Newtons method).
