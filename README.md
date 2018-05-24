@@ -1,5 +1,5 @@
 # Interior Points Method
-Implementation of Interior Points Method in MATLAB.
+Implementation of Interior Points Method in MATLAB (My Assignment in LO course [MTH305]  [IIIT-Delhi]).
 
 Further, we solved the following Linear Problem:
 ```
